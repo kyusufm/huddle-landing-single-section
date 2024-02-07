@@ -6,12 +6,14 @@
 body{
     background: url('../images/bg-desktop.svg') var(--violet);
     font-family: Poppins;
-    height: 100vh;
     justify-content: center;
     display: flex;
     color: #ffffff;
     margin: 0;
     flex-direction: column;
+}
+main {
+    margin: 0 auto;
 }
 
 nav{
@@ -23,6 +25,7 @@ nav img{
 }
 
 .hero {
+    margin: auto;
     margin-top: 76px;
     width: 1280px;
     display: flex;
@@ -63,21 +66,38 @@ article{
 
 footer {
     position: fixed;
-    bottom: 0;
-    right: 0;
-    padding: 10px;
-    
+    right: 78px;
+    bottom:40px;    
   }
 
   footer a {
     color: #f0f0f0;
+    font-size: 18px;
+  }
+
+  /* CSS to style circular icons */
+  footer .icon-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px; /* Adjust the size of the circle */
+    height: 38px; /* Adjust the size of the circle */
+    border-radius: 50%; /* Make the element circular */
+    background-color: transparent; /* Change the background color of the circle */
+    margin-left: 10px; /* Add some spacing between icons */
+    border: 1px solid white;
+  }
+  
+  /* CSS to style icon color */
+  footer .icon-circle i {
+    color: #fff; /* Change the color of the icon */
   }
 
 @media screen and (max-width: 600px) {
     body {
         margin: 32px;
         height: auto;
-        background: url('../images/bg-mobile.svg') var(--violet);
+        background: url('../images/bg-mobile.svg') var(--violet) no-repeat;
     }
     nav {
         margin: auto 0;
@@ -103,4 +123,19 @@ footer {
         padding: 14px 24px;
         font-size: 14px;
     }
+
+    footer {
+        position: relative;
+        margin: auto;
+        right: auto;
+        bottom: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+
+    footer a {
+        color: #f0f0f0;
+        font-size: 14px;
+      }
 }
