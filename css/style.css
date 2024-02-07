@@ -1,0 +1,106 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --smagenta: hsl(300, 69%, 71%);
+}
+
+body{
+    background: url('../images/bg-desktop.svg') var(--violet);
+    font-family: Poppins;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    color: #ffffff;
+    margin: 0;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    margin-top: 60px;
+}
+nav img{
+    height: 50px;
+}
+
+.hero {
+    margin-top: 76px;
+    width: 1280px;
+    display: flex;
+    flex-direction: row;
+}
+.image img{
+    width: 696px;
+}
+article{
+    margin-top: 44px;
+    margin-left: 60px;
+    width: 512px;
+}
+.title{
+    font-family: 'Poppins';
+    margin: 0;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.copy{
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7em;
+}
+.register {
+    margin-top: 24px;
+    width: 200px;
+    padding: 18px 24px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: var(--violet);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    
+  }
+
+  footer a {
+    color: #f0f0f0;
+  }
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 32px;
+        height: auto;
+        background: url('../images/bg-mobile.svg') var(--violet);
+    }
+    nav {
+        margin: auto 0;
+    }
+    .hero {
+        width: auto;
+        flex-direction: column;
+    }
+    .image img{
+        width: 100%;
+    }
+    article {
+        width: auto;
+        margin: 0;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .title {
+        
+        font-size: 24px;
+    }
+    .register {
+        padding: 14px 24px;
+        font-size: 14px;
+    }
+}
